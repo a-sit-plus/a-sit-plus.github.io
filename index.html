@@ -20,11 +20,12 @@
             padding-right: 0.5em;
             z-index:1;
             color:#0000;
-              transition: .5s ease;
+            transition: .1s ease;
         }
         .cell:hover {
             color: #059;
-              transition: .5s ease;
+              transition: .1s ease;
+              background-color: #c4c4c433;
         }
 
         .pad {
@@ -47,18 +48,18 @@
           content: ' ';
           position: absolute;
           width: 220px;
-          height: 300px;
+          height: 360px;
           opacity: 1;
           background-position: center;
           background-repeat: no-repeat;
           z-index: -1;
-              transition: .5s ease;
+              transition: .1s ease;
         }
         
         .hero:hover:before {
             filter: blur(20px);
-            opacity: 0.3;
-              transition: .5s ease;
+            opacity: 0.2;
+              transition: .1s ease;
         }
         
         .gradle:before {
@@ -93,11 +94,10 @@
             background-image: url("bg/gradle.svg");
         }
         .cashbox:before {
-            opacity: 0.4;
             background-image: url("bg/emoji_receipt.svg");
         }
          .cashbox:hover:before {
-            opacity: 0.4;
+            opacity: 0.5;
         }
 
     </style>
@@ -243,7 +243,9 @@
 
     <p>Copyright &copy; 2023 A-SIT Plus GmbH, Seidlgasse 22 / Top 9, 1030 Vienna, Austria</p>
     <em>
-        Made with love (and brutalism) based on <a href="https://bafs.github.io/mu/">µ CSS</a>
+        Made with love (and brutalism) based on <a href="https://bafs.github.io/mu/">µ CSS</a>.
+        <br>
+        Icons taken from Noto Emoji Color and Android/Swift/Gradle press kit.
     </em>
     <p><img src="logo_kurzertext.svg" alt="A-SIT Plus Logo" style="height:4em;"></p>
 </div>
