@@ -15,7 +15,7 @@
         }
 
         .cell {
-            background: #f4f4f4;
+            background-image: linear-gradient(#f4f4f488, #f4f4f4cc, #f4f4f4dd, #f4fef4ff);
             border: 1px solid #8cf;
             padding-left: 0.5em;
             padding-right: 0.5em;
@@ -37,6 +37,15 @@
             text-align: center;
         }
 
+        .with-bg {
+            background: #f4f4f4 no-repeat center;
+            text-shadow: #f4f4f4 0 0 5px;
+        }
+
+        .blur {
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px)
+        }
     </style>
 </head>
 <body>
@@ -57,92 +66,138 @@
 
 <div class="row pad">
     <div class="c g3 pad">
-        <a href="https://github.com/a-sit-plus/vck">
-            <div class="cell">
-                <h3 class="center">VC-K </h3>
-                <p class="center">KMP (JVM and iOS) verifiable credentials library implementing the W3C VC data model
-                    and ISO 18013-5 mDL. Issue (ARIES, OID4VCI),
-                    present (ARIES, SIOPv2), and verify VCs.
-                </p>
+        <div class="with-bg" style="background-image: url(./img/c-opt.svg); background-size: 230px">
+            <div class="blur">
+                <a href="https://github.com/a-sit-plus/vck">
+                    <div class="cell">
+                        <h3 class="center">VC-K </h3>
+                        <p class="center">KMP (JVM and iOS) verifiable credentials
+                            library
+                            implementing the W3C VC data model
+                            and ISO 18013-5 mDL. Issue (ARIES, OID4VCI),
+                            present (ARIES, SIOPv2), and verify VCs.
+                        </p>
+
+                    </div>
+                </a>
             </div>
-        </a>
+        </div>
     </div>
     <div class="c g3 pad">
-        <a href="https://github.com/a-sit-plus/swift-package-kmm-vc-library">
-            <div class="cell">
-                <h3 class="center">VC-K Swift Package</h3>
-                <p class="center">Swift package wrapping the VC-K library. Also discusses recommended iOS-specific
-                    extensions
-                    for smoother
-                    integration in iOS apps. This package is directly usable in XCode projects.</p>
+        <div class="with-bg" style="background-image: url(./img/arrows-opt.svg); background-size: 320px">
+            <div class="blur">
+                <a href="https://github.com/a-sit-plus/swift-package-kmm-vc-library">
+                    <div class="cell">
+                        <h3 class="center">VC-K Swift Package</h3>
+                        <p class="center">Swift package wrapping the VC-K library. Also discusses recommended
+                            iOS-specific
+                            extensions
+                            for smoother
+                            integration in iOS apps. This package is directly usable in XCode projects.</p>
+                    </div>
+                </a>
             </div>
-        </a>
+        </div>
     </div>
     <div class="c g3 pad">
-        <a href="https://github.com/a-sit-plus/credentials-collection">
-            <div class="cell">
-                <h3 class="center">Credentials Collection</h3>
-                <p class="center">Collection of all verifiable credentials implemented using VC-K.
-                    Features IDA Credentials, Mobile Driving License, EU PID Credential, Power of Representation, and
-                    Certificate of Residence.</p>
+        <div class="with-bg" style="background-image: url(./img/dashes-opt.svg); background-size: 420px">
+            <div class="blur">
+                <a href="https://github.com/a-sit-plus/credentials-collection">
+                    <div class="cell">
+                        <h3 class="center">Credentials Collection</h3>
+                        <p class="center">Collection of all verifiable credentials implemented using VC-K.
+                            Features IDA Credentials, Mobile Driving License, EU PID Credential, Power of
+                            Representation, and
+                            Certificate of Residence.</p>
+                    </div>
+                </a>
             </div>
-        </a>
-    </div>
-</div>
-<div class="row pad">
-    <div class="c g3 pad">
-        <a href="https://github.com/a-sit-plus/pupilidlib">
-            <div class="cell">
-                <h3 class="center">Pupil ID Library</h3>
-                <p class="center">KMP library implementing features of the Austrian electronic pupil ID (edu.digicard)
-                    as W3C Verifiable Credentials. Targets iOS and Android on the client side, and the JVM on the
-                    back-end.</p>
-            </div>
-        </a>
-    </div>
-    <div class="c g3 pad">
-        <a href="https://github.com/a-sit-plus/jsonpath4k">
-            <div class="cell"><h3 class="center">JsonPath4K</h3>
-                <p class="center">100% pure Kotlin Multiplatform (JVM, Android, iOS) library for working with JSON Paths
-                    as defined in
-                    RFC9535.
-                    It supports the function extensions specified in RFC9535 by default.</p>
-            </div>
-        </a>
-    </div>
-    <div class="c g3 pad">
-        <a href="https://github.com/a-sit-plus/signum">
-            <div class="cell">
-                <h3 class="center">Signum</h3>
-                <p class="center">KMP Crypto verifier and datatypes for certificates, public keys, PKCS#10 CSRs,
-                    etc.<br>
-                    100% pure Kotlin ASN.1 parser + encoder included! Interoperates with JWS, COSE, and JCA datatypes.
-                </p>
-            </div>
-        </a>
+        </div>
     </div>
 </div>
 <div class="row pad">
     <div class="c g3 pad">
-        <a href="https://github.com/a-sit-plus/kmmresult">
-            <div class="cell">
-                <h3 class="center">KMM Result</h3>
-                <p class="center">100% pure Kotlin multiplatform result class. Drop-in replacement for Kotlin's stdlib
-                    <code>Result</code>, but usable from Swift and Objective&nbsp;C. Maps from/to <code>Result</code>.
-                </p>
+        <div class="with-bg" style="background-image: url(./img/pupilid-opt.svg); background-size: 180px">
+            <div class="blur">
+                <a href="https://github.com/a-sit-plus/pupilidlib">
+                    <div class="cell">
+                        <h3 class="center">Pupil ID Library</h3>
+                        <p class="center">KMP library implementing features of the Austrian electronic pupil ID
+                            (edu.digicard)
+                            as W3C Verifiable Credentials. Targets iOS and Android on the client side, and the JVM on
+                            the
+                            back-end.</p>
+                    </div>
+                </a>
             </div>
-        </a>
+        </div>
     </div>
     <div class="c g3 pad">
-        <a href="https://github.com/a-sit-plus/attestation-service">
-            <div class="cell">
-                <h3 class="center">Attestation Service</h3>
-                <p class="center">Server-side mobile client attestation library written in Kotlin. Provides a unified
-                    interface for remotely establishing trust in iOS and Android clients to JVM backends.</p>
+        <div class="with-bg" style="background-image: url(./img/4k.svg)">
+            <div class="blur">
+                <a href="https://github.com/a-sit-plus/jsonpath4k">
+                    <div class="cell"><h3 class="center">JsonPath4K</h3>
+                        <p class="center">100% pure Kotlin Multiplatform (JVM, Android, iOS) library for working with
+                            JSON Paths
+                            as defined in
+                            RFC9535.
+                            It supports the function extensions specified in RFC9535 by default.</p>
+                    </div>
+                </a>
             </div>
-        </a>
+        </div>
     </div>
     <div class="c g3 pad">
+        <div class="with-bg" style="background-image: url(./img/signum.svg)">
+            <div class="blur">
+                <a href="https://github.com/a-sit-plus/signum">
+                    <div class="cell">
+                        <h3 class="center">Signum</h3>
+                        <p class="center">KMP Crypto verifier and datatypes for certificates, public keys, PKCS#10 CSRs,
+                            etc.<br>
+                            100% pure Kotlin ASN.1 parser + encoder included! Interoperates with JWS, COSE, and JCA
+                            datatypes.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row pad">
+    <div class="c g3 pad">
+        <div class="with-bg" style="background-image: url(./img/kmmresult.svg)">
+            <div class="blur">
+                <a href="https://github.com/a-sit-plus/kmmresult">
+                    <div class="cell">
+                        <h3 class="center">KMM Result</h3>
+                        <p class="center">100% pure Kotlin multiplatform result class. Drop-in replacement for Kotlin's
+                            stdlib
+                            <code>Result</code>, but usable from Swift and Objective&nbsp;C. Maps from/to
+                            <code>Result</code>.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="c g3 pad">
+        <div class="with-bg" style="background-image: url(./img/w-opt.svg); background-size: 280px">
+            <div class="blur">
+                <a href="https://github.com/a-sit-plus/attestation-service">
+                    <div class="cell">
+                        <h3 class="center">Attestation Service</h3>
+                        <p class="center">Server-side mobile client attestation library written in Kotlin. Provides a
+                            unified
+                            interface for remotely establishing trust in iOS and Android clients to JVM backends.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="c g3 pad">
+        <div class="with-bg" style="background-image: url(./img/o-opt.svg); background-size: 280px">
+            <div class="blur">
         <a href="https://github.com/a-sit-plus/android-attestation">
             <div class="cell">
                 <h3 class="center">Android Attestation</h3>
@@ -152,17 +207,23 @@
             </div>
         </a>
     </div>
+    </div>
+    </div>
 </div>
 <div class="row pad">
     <div class="c g3 pad">
-        <a href="https://github.com/a-sit-plus/multibase">
-            <div class="cell"><h3 class="center">multi&#178;_base</h3>
-                <p class="center">Kotlin multiplatform multibase encoder/decoder.
-                    This library is a port of Protocol Labs' Kotlin/JVM multibase implementation.
-                    Verified against official test vectors.
-                </p>
+        <div class="with-bg" style="background-image: url(./img/multibase.svg)">
+            <div class="blur">
+                <a href="https://github.com/a-sit-plus/multibase">
+                    <div class="cell"><h3 class="center">multi&#178;_base</h3>
+                        <p class="center">Kotlin multiplatform multibase encoder/&hairsp;decoder.
+                            This library is a port of Protocol Labs' Kotlin/JVM multibase implementation.
+                            Verified against official test vectors.
+                        </p>
+                    </div>
+                </a>
             </div>
-        </a>
+        </div>
     </div>
     <div class="c g3 pad">
         <a href="https://github.com/ehn-dcc-development/hcert-kotlin">
@@ -218,7 +279,7 @@
 <hr>
 <div class="footer">
 
-    <p>Copyright &copy; 2023 A-SIT Plus GmbH, Seidlgasse 22 / Top 9, 1030 Vienna, Austria</p>
+    <p>Copyright &copy; 2023-2024 A-SIT Plus GmbH, Seidlgasse 22 / Top 9, 1030 Vienna, Austria</p>
     <em>
         Made with love (and brutalism) based on <a href="https://bafs.github.io/mu/">µ CSS</a>
     </em>
