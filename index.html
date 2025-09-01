@@ -1,284 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta‑refresh fallback -->
+    <meta http-equiv="refresh" content="0; url=https://plus.a-sit.at/open-source.html">
+
+    <!-- Canonical link – tells crawlers the preferred destination -->
+    <link rel="canonical" href="https://plus.a-sit.at/open-source.html">
+
+    <!-- robots meta – discourage indexing of the redirect page -->
+    <meta name="robots" content="noindex,follow">
+
+    <script>
+        try { window.location.replace('https://plus.a-sit.at/open-source.html'); }
+        catch (e) { /* fallback handled by meta */ }
+    </script>
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>A-SIT Plus GmbH Open Source</title>
+    <title>A-SIT Plus Open Source</title>
     <link rel="stylesheet" href="mu.css">
     <link rel="icon" type="image/x-icon" href="schloss.svg">
-    <style>
-        .row.colorize .c {
-            background: #f4f4f4;
-            border: 1px solid #8cf;
-        }
-
-        .cell {
-            background-image: linear-gradient(#f4f4f488, #f4f4f4cc, #f4f4f4dd, #f4f4f4ff);
-            border: 1px solid #8cf;
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-        }
-
-        .pad {
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-            padding-bottom: 1em;
-        }
-
-        .row.pad {
-            padding: 0;
-        }
-
-        .footer {
-            font-size: 12pt;
-            color: #777;
-            text-align: center;
-        }
-
-        .with-bg {
-            background: #f4f4f4 no-repeat center;
-            text-shadow: #f4f4f4 0 0 5px;
-        }
-
-        .blur {
-            -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px)
-        }
-    </style>
 </head>
 <body>
 
-<header>
+<header class="center">
     <h1><img class="logo" src="schloss.svg" alt="A-SIT Logo (Lock)"> A-SIT Plus Open&nbsp;Source</h1>
 </header>
 
-<h2>
-    Sharing is Caring!</h2>
-<p class="justified">
-    Below you'll find projects developed at A-SIT Plus published as free and open-source software.
-    We heavily rely on Kotlin multiplatform. Hence, some of the project's buildscripts might also
-    be of interest to the public, even if a certain project may be specifically tailored to our
-    internal needs.
-</p>
-<hr>
-
-<div class="row pad">
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/c-opt.svg); background-size: 230px">
-            <div class="blur">
-                <a href="https://github.com/a-sit-plus/vck">
-                    <div class="cell">
-                        <h3 class="center">VC-K </h3>
-                        <p class="center">KMP (JVM and iOS) verifiable credentials
-                            library
-                            implementing the W3C VC data model
-                            and ISO 18013-5 mDL. Issue (ARIES, OID4VCI),
-                            present (ARIES, SIOPv2), and verify VCs.
-                        </p>
-
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/valera-opt.svg); background-size: 320px">
-            <div class="blur">
-                <a href="https://github.com/a-sit-plus/valera">
-                    <div class="cell">
-                        <h3 class="center">Valera</h3>
-                        <p class="center">A VC-K-powered Compose Multiplatform identity wallet app 
-                        supporting various VC types and formats.
-                        Not intended for production use, but gives a glimpse of what lies ahead for the EUDIW.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/dashes-opt.svg); background-size: 420px">
-            <div class="blur">
-                <a href="https://github.com/a-sit-plus/credentials-collection">
-                    <div class="cell">
-                        <h3 class="center">Credentials Collection</h3>
-                        <p class="center">Collection of all verifiable credentials implemented using VC-K.
-                            Features IDA Credentials, Mobile Driving License, EU PID Credential, Power of
-                            Representation, and
-                            Certificate of Residence.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row pad">
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/signum.svg)">
-            <div class="blur">
-                <a href="https://github.com/a-sit-plus/signum">
-                    <div class="cell">
-                        <h3 class="center">Signum</h3>
-                        <p class="center">KMP crypto provider and PKI library supporting key and app attestation on iOS and Android.<br>
-                            100% pure Kotlin ASN.1 engine included! Interops with JOSE, COSE, JCA and iOS
-                            datatypes.
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/multibase.svg)">
-            <div class="blur">
-                <a href="https://github.com/a-sit-plus/multibase">
-                    <div class="cell"><h3 class="center">multi&#178;_base</h3>
-                        <p class="center">Kotlin multiplatform multi&shy;base encoder/&hairsp;decoder.
-                            This library is a port of Protocol Labs' Kotlin/JVM multibase implementa&shy;tion.
-                            Its correctness verified against official test vectors.
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/4k.svg)">
-            <div class="blur">
-                <a href="https://github.com/a-sit-plus/jsonpath4k">
-                    <div class="cell"><h3 class="center">JsonPath4K</h3>
-                        <p class="center">100% pure Kotlin Multiplatform (JVM, Android, iOS) library for working with
-                            JSON Paths
-                            as defined in
-                            RFC9535.
-                            It supports the function extensions specified in RFC9535 by default.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row pad">
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/kmmresult.svg)">
-            <div class="blur">
-                <a href="https://github.com/a-sit-plus/kmmresult">
-                    <div class="cell">
-                        <h3 class="center">KMM Result</h3>
-                        <p class="center">100% pure Kotlin multiplatform result class. Drop-in replacement for Kotlin's
-                            stdlib
-                            <code>Result</code>, but usable from Swift and Objective-C. Maps from/to
-                            <code>Result</code>. Not a value class for interop reasons.
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/w-opt.svg); background-size: 280px">
-            <div class="blur">
-                <a href="https://github.com/a-sit-plus/warden">
-                    <div class="cell">
-                        <h3 class="center">WARDEN</h3>
-                        <p class="center">Server-side mobile client attestation library. Provides a
-                            unified interface for remotely establishing trust in iOS and Android clients.
-                            Configurable from Spring Boot and Hoplite.
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/o-opt.svg); background-size: 280px">
-            <div class="blur">
-        <a href="https://github.com/a-sit-plus/warden-roboto">
-            <div class="cell">
-                <h3 class="center">WARDEN-roboto</h3>
-                <p class="center">High-level server-side an&shy;droid key and app attes&shy;tation library. Integral part of <em>WARDEN</em>.
-                    Integrates upstream attestation verification logic from Google. Configurable from Spring Boot and Hoplite.</p>
-            </div>
-        </a>
-    </div>
-    </div>
-    </div>
-</div>
-<div class="row pad">
-    <div class="c g3 pad">
-        <div class="with-bg" style="background-image: url(./img/pupilid-opt.svg); background-size: 180px">
-            <div class="blur">
-                <a href="https://github.com/a-sit-plus/pupilidlib">
-                    <div class="cell">
-                        <h3 class="center">Pupil ID Library</h3>
-                        <p class="center">KMP library implementing features of the Austrian electronic pupil ID
-                            (edu.digicard) as W3C Verifiable Credentials. Targets iOS and Android on the client side,
-                            and JVM back-ends.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="c g3 pad">
-        <a href="https://github.com/ehn-dcc-development/hcert-kotlin">
-            <div class="cell">
-                <h3 class="center"> KMM DGC Library</h3>
-                <p class="center">Kotlin (JVM+JS) implementation of the HCERT/DCC specification. Create and verify <em>
-                    Electronic Health Certificates</em> used during the second half of the COVID pandemic.</p>
-            </div>
-        </a>
-    </div>
-    <div class="row pad">
-        <div class="c g3 pad">
-            <a href="https://github.com/ehn-dcc-development/ValidationCore">
-                <div class="cell"><h3 class="center">Swift ValidationCore</h3>
-                    <p class="center">Swift library for validating <em>Electronic Health Certificates</em> (HCERT) po&shy;pu&shy;larised
-                        during the second half of the COVID pandemic.<br> An iOS demonstration application is available.
-                    </p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="c g2 pad">
-        <a href="https://github.com/BMF-RKSV-Technik/at-registrierkassen-mustercode">
-            <div class="cell"><h3 class="center">Cashbox Democode</h3>
-                <p class="center">Java demo code for producing and verifying signed cashbox receipts compliant with
-                    the
-                    Austrian cashbox security regulation. Conceived in 2015. Apache-licensed; uses maven.</p>
-            </div>
-        </a>
-    </div>
-    <div class="c g2 pad">
-        <a href="https://github.com/a-sit-plus/gradle-conventions-plugin">
-            <div class="cell"><h3 class="center">Gradle Conventions</h3>
-                <p class="center">Custom Gradle Plugin used for our projects. Currently, it supports JVM-only
-                    projects
-                    and Kotlin Multiplatform projects. Also works as an example on how this can be done in general.
-                </p>
-            </div>
-        </a>
-    </div>
-</div>
-<hr>
-
 <p class="center">
-    ~ See also our <a href="https://github.com/a-sit-plus/">GitHub Org
-    <svg role="img" style="height: 1.2em; vertical-align:top;" viewBox="0 0 24 24"
-         xmlns="http://www.w3.org/2000/svg">
-        <title>GitHub</title>
-        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-    </svg>
-</a> for additional projects ~
+    This page has moved. If you aren’t redirected automatically, <a href="https://plus.a-sit.at/open-source.html">click here</a>.
 </p>
 <hr>
-<div class="footer">
-
+<div class="footer center">
     <p>Copyright &copy; 2023-2025 A-SIT Plus GmbH, Seidlgasse 22 / Top 9, 1030 Vienna, Austria</p>
-    <em>
-        Made with love (and brutalism) based on <a href="https://bafs.github.io/mu/">µ CSS</a>
-    </em>
-    <p><img src="logo_kurzertext.svg" alt="A-SIT Plus Logo" style="height:4em;"></p>
 </div>
 </body>
 </html>
